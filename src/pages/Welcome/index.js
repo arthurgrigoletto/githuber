@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import api from '~/services/api';
 
 import {
@@ -82,5 +83,11 @@ class Welcome extends Component {
     );
   }
 }
+
+Welcome.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
 
 export default Welcome;
