@@ -16,12 +16,19 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
+
   container: {
     alignItems: 'stretch',
     backgroundColor: colors.secundary,
     flex: 1,
     justifyContent: 'center',
     padding: metrics.basePadding * 2,
+  },
+
+  error: {
+    color: colors.danger,
+    marginTop: metrics.baseMargin,
+    textAlign: 'center',
   },
 
   form: {
